@@ -9,6 +9,15 @@ const io = new Server(server, {
     origin: "*"
   }
 });
+});
+
+app.get("/", (req, res) => {
+  res.send("✅ Servidor Parchís Torneo Socket‑IO está activo!");
+});
+
+// Almacén de salas
+const salas = {};
+
 
 // Almacén de salas
 const salas = {};
